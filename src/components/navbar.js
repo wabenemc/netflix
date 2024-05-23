@@ -1,5 +1,5 @@
 import "./navbar.css";
-import Search from "../app/search/page";
+// import Search from "../app/search/page";
 export default function Navbar() {
   return (
     <div>
@@ -18,7 +18,7 @@ export default function Navbar() {
             <a href="#">Moins populiares</a>
           </li>
         </ul>
-        <Search />
+        {/* <Search /> */}
         <div className="user">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"

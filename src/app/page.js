@@ -1,11 +1,10 @@
 "use client";
-import Category_top from "./category_top/page";
-import Bonjour from "./employes/page";
-import HeroBanner from "./heroBanner.js/page";
-import MoviesLess from "./movies_less/page";
-import PopularMovies from "./movies_top/page.js";
-import UpcomingMovies from "./movies_upcoming/page";
-import Search from "./search_page/page";
+// import Category_top from "./category_top/page";
+// import Bonjour from "./employes/page";
+import HeroBanner from "./heroBanner/page";
+import MoviesLess from "./less_movies/page";
+import PopularMovies from "./top_movies/page.js";
+import UpcomingMovies from "./upcoming_movies/page";
 
 export default function App(props) {
   return (
@@ -14,9 +13,9 @@ export default function App(props) {
       <PopularMovies />
       <MoviesLess />
       <UpcomingMovies />
-      <Category_top />
-      <Search />
-      <Bonjour />
+      {/* <Category_top /> */}
+      {/* <Search /> */}
+      {/* <Bonjour /> */}
     </div>
   );
 }
