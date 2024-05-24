@@ -10,13 +10,13 @@ export default function Navbar(props) {
         </div>
         <ul className="nav-links">
           <li>
-            <a href="#">Top</a>
+            <a href="/top_category">Top</a>
           </li>
           <li>
-            <a href="#">Less</a>
+            <a href="/less_category">Less</a>
           </li>
           <li>
-            <a href="#">Upcoming</a>
+            <a href="/upcoming_category">Upcoming</a>
           </li>
         </ul>
         <div>

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
+import "./pages.css";
 
 export default function MovieDetails() {
   const [movie, setMovie] = useState({});
