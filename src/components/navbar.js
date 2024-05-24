@@ -1,6 +1,6 @@
 "use client";
 import "./navbar.css";
-import Search from "../app/search/page";
+
 export default function Navbar(props) {
   return (
     <div>
@@ -9,6 +9,9 @@ export default function Navbar(props) {
           <h1>F-Movies</h1>
         </div>
         <ul className="nav-links">
+          <li>
+            <a href="/heroBanner">Accueil</a>
+          </li>
           <li>
             <a href="/top_category">Top</a>
           </li>
@@ -19,9 +22,6 @@ export default function Navbar(props) {
             <a href="/upcoming_category">Upcoming</a>
           </li>
         </ul>
-        <div>
-          <Search />
-        </div>
         <div className="user">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
