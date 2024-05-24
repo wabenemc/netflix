@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function TopRatedMovies() {
+export default function TopRatedMovies(props) {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -53,13 +53,15 @@ export default function TopRatedMovies() {
       <h2>Les mieux notés</h2>
       <Slider {...settings}>
         {movies.map((movie) => (
-          <div key={movie.id} className="movie-card">
-            <img
-              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-              alt={movie.title}
-            />
-            <h3>{movie.title}</h3>
-          </div>
+          <a key={movie.id} href={`/movies/${movie.id}`}>
+            <div className="movie-card">
+              <img
+                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                alt={movie.title}
+              />
+              <h3>{movie.title}</h3>
+            </div>
+          </a>
         ))}
       </Slider>
     </div>
